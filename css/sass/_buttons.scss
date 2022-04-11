@@ -1,0 +1,75 @@
+.btn {
+  display: inline-block;
+  color: $white-light;
+  padding: 8px 24px;
+  cursor: pointer;
+  background: $gradient-normal;
+  border-radius: 8px;
+  border: 0;
+  @include typeface-2(p3, desktop);
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+a {
+  text-decoration: none;
+  @include typeface-2(p3, desktop);
+  color: $white-light;
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+input {
+  accent-color: $primary-normal;
+}
+
+input,
+select,
+option,
+textarea {
+  padding: 10px 12px;
+  background-color: $black-light;
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  color: $white-light;
+  @include typeface-2(p3, desktop);
+}
+
+select,
+option {
+  height: 48px;
+}
+
+button {
+  display: inline-block;
+  border: 1px solid $primary-dark;
+  color: $primary-normal;
+  padding: 8px 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  @include typeface-2(p3, desktop);
+  transition: 0.5s ease-in;
+
+  &:hover {
+    background: $gradient-normal;
+    color: $white-light;
+  }
+}
+.btn-search {
+  cursor: pointer;
+  height: 48px;
+  width: 56px;
+  background-image: url("../svg/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translate3d(-6px, 0, 0);
+  background-color: $black-light;
+  border: 0;
+  border-radius: 4px;
+}
